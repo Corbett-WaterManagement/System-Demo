@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A guided explanation of well-fed irrigation, water storage, automatic filtration and smart controls.">
+  <title>Irrigation System | Guided Presentation</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23A90533'/%3E%3Ctext x='10' y='29' fill='white' font-family='Arial' font-size='28' font-weight='bold'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=smart-logo-3">
+</head>
+<body class="presentation"><header class="site-header"><img src="assets/corbett-smart-logo.svg" alt="Corbett Irrigation and Smart Water Management" width="156" height="120"><span class="concept-badge">SYSTEM PRESENTATION</span></header><main><div class="walkthrough-heading" id="system-story"><div><p class="eyebrow">WELL-FED IRRIGATION</p><h1>How the system works.</h1></div><p>Water supply, storage and delivery.<br>Choose a chapter to explore.</p></div>    <section id="digital-twin" class="experience" data-compare-view="twin" aria-label="Interactive system walkthrough">
+      <aside class="story">
+        <div class="chapter-marker"><span id="chapter-number">00</span><span id="chapter-name">THE COMPLETE SYSTEM</span></div>
+        <div class="story-body" aria-live="polite" aria-atomic="true">
+          <h2 id="story-title">A closer look. <br>A clearer picture.</h2>
+          <p id="story-description">Follow the water. Explore the equipment. See how each part contributes to the installation.</p>
+          <div id="component-note" class="component-note"><span class="note-line"></span><span id="note-text">Supply · Store · Filter · Deliver</span></div>
+        </div>
+        <nav class="chapter-list" aria-label="Walkthrough chapters">
+          <p class="chapter-navigation-hint">Choose a chapter<span>Select a step to explore.</span></p>
+          <button class="chapter active" data-step="0" aria-current="step"><span class="step-icon overview-icon">◈</span><span>System overview</span><span class="chapter-arrow" aria-hidden="true">→</span></button>
+          <button class="chapter" data-step="1"><span class="step-icon">01</span><span>Water storage</span><span class="chapter-arrow" aria-hidden="true">→</span></button>
+          <button class="chapter" data-step="2"><span class="step-icon">02</span><span>Pumping &amp; filtration</span><span class="chapter-arrow" aria-hidden="true">→</span></button>
+          <button class="chapter" data-step="3"><span class="step-icon">03</span><span>Control &amp; connectivity</span><span class="chapter-arrow" aria-hidden="true">→</span></button>
+          <button class="chapter" data-step="4"><span class="step-icon">04</span><span>Into the landscape</span><span class="chapter-arrow" aria-hidden="true">→</span></button>
+        </nav>
+        
+      </aside>
+
+<div class="viewer" id="viewer">
+        <div class="viewer-top"><span class="viewer-label"><span class="live-dot"></span> DIGITAL TWIN</span><button class="icon-button" id="fullscreen" aria-label="Expand walkthrough" title="Expand walkthrough"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></button></div>
+        <div id="landscape-switcher" class="landscape-switcher" hidden aria-label="Explore irrigation methods">
+          <button data-landscape="all" aria-pressed="true">All</button><button data-landscape="drip" aria-pressed="false">Drip garden</button><button data-landscape="mp" aria-pressed="false">Multi-stream</button><button data-landscape="rotor" aria-pressed="false">Rotors</button>
+        </div>
+        <div id="scene" role="img" aria-label="A detailed three dimensional landscape cutaway: two wells feed a buried cistern connected to the Corbett control panels and filtration assembly, with outgoing water distributed to a tree and shrub drip garden, an Multi-stream lawn and a conventional rotor lawn."></div>
+        <div class="scene-loading" id="loading"><span></span> Preparing the installation…</div>
+        <div class="fallback" id="fallback" hidden><p>The 3D view is unavailable in this browser. Try reloading or use another browser.</p></div>
+        <button class="hotspot" id="pin-storage" data-step="1"><span class="pin-dot">1</span><span>Underground cistern</span></button>
+        <button class="hotspot" id="pin-filtration" data-step="2"><span class="pin-dot">2</span><span>Filtration</span></button>
+        <button class="hotspot" id="pin-control" data-step="3"><span class="pin-dot">3</span><span>System control</span></button>
+        <button class="hotspot" id="pin-zones" data-step="4"><span class="pin-dot">4</span><span>Irrigation zones</span></button>
+        <button class="scene-label landscape-label" id="label-zone-1" data-landscape="drip" aria-pressed="false">DRIP GARDEN ↗</button>
+        <button class="scene-label landscape-label" id="label-zone-2" data-landscape="mp" aria-pressed="false">MULTI-STREAM ↗</button>
+        <button class="scene-label landscape-label" id="label-zone-3" data-landscape="rotor" aria-pressed="false">ROTOR LAWN ↗</button>
+        <button class="scene-label meter-label" id="label-meter-1" data-meter="0">Well flow meters ↗</button>
+        <button class="scene-label meter-label" id="label-meter-3" data-meter="2">Flow meter ↗</button>
+        <span class="scene-label" id="label-well-1">WELL 01</span>
+        <span class="scene-label" id="label-well-2">WELL 02</span>
+        <span class="scene-label grade-label" id="label-grade">GROUND LEVEL</span>
+        <div class="view-caption" id="view-caption"><span></span> COMPLETE SYSTEM</div>
+        <div class="viewer-bottom"><div class="legend"><span><i class="water-swatch"></i>Water</span><span><i class="signal-swatch"></i>Signal</span></div><span class="drag-hint"><svg viewBox="0 0 24 24"><path d="M9 10V5a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v8l1-2a1.5 1.5 0 0 1 3 1l-3 8H9L4 13a1.6 1.6 0 0 1 2-2z"/></svg> Drag to rotate</span><button class="text-button" id="reset-view">Reset view ↺</button></div>
+      </div>
+
+<div class="tour-bar">
+        <button class="play-button" id="play-tour" aria-pressed="false"><svg viewBox="0 0 20 20"><path id="play-symbol" d="M6 3l11 7-11 7z"/></svg><span>Play walkthrough</span></button>
+        <div class="tour-progress" aria-label="Tour progress"><button data-step="0" class="progress-segment current" aria-label="Overview"></button><button data-step="1" class="progress-segment" aria-label="Water storage"></button><button data-step="2" class="progress-segment" aria-label="Pumping and filtration"></button><button data-step="3" class="progress-segment" aria-label="Control and connectivity"></button><button data-step="4" class="progress-segment" aria-label="Into the landscape"></button></div>
+        <div class="tour-navigation"><span id="step-count">01 / 05</span><button class="nav-button" id="previous" aria-label="Previous chapter" disabled>←</button><button class="nav-button next" id="next" aria-label="Next chapter">→</button></div>
+      </div>
+      <div class="proof-copy comparison-detail" aria-live="polite"><p class="eyebrow" id="proof-kicker">00 / THE COMPLETE SYSTEM</p><h2 id="proof-title">One coordinated installation.</h2><p id="proof-description">Water supply, storage, filtration and controls work together to serve a varied residential landscape.</p><p class="proof-detail" id="proof-detail">Corbett assessed, designed, prefabricated, installed, programmed and tested the system.</p><div class="proof-navigation" hidden><button id="proof-previous" aria-label="Previous story chapter">←</button><span id="proof-count">01 / 05</span><button id="proof-next" aria-label="Next story chapter">→</button></div></div>
+    </section>
+
+<div class="experience-footnote"><p>Illustrative arrangement. Final capacity, controls and connectivity depend on the proposed design.</p><button class="text-button" id="motion-toggle" aria-pressed="false">Pause motion</button></div>    
+<footer class="page-footer"><span>Corbett Irrigation · System presentation</span><span>Supply · Store · Filter · Deliver</span><span id="year"></span></footer></main><script type="module" src="app.js?v=twin-only-2"></script></body></html>
